@@ -13,7 +13,28 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['"Times New Roman"', 'Times', 'serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-surface': 'var(--gradient-surface)',
+      },
+      boxShadow: {
+        card: 'var(--shadow-card)',
+        elevated: 'var(--shadow-elevated)',
+        soft: 'var(--shadow-soft)',
+      },
       colors: {
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
